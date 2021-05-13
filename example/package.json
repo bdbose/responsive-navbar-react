@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-frame-component": "^5.0.0",
     "react-scripts": "file:../node_modules/react-scripts",
+    "react-switch": "^6.0.0",
     "responsive-navbar-react": "file:.."
   },
   "devDependencies": {

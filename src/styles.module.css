@@ -1,9 +1,88 @@
-/* add css module styles here (optional) */
+.navbar_wrapper {
+  font-family: sans-serif;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px #a0a0a0;
+  align-items: center;
+  width: -webkit-fill-available;
+  position: relative;
+}
+.navbar_wrapper a {
+  text-decoration: none;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.logo_wrapper img {
+  height: 40px;
+}
+
+.nav_elements a {
+  margin-left: 20px;
+  transition: 0.25s ease;
+}
+.nav_elements a:hover {
+  filter: brightness(0.5);
+}
+.mob_nav {
+  display: none;
+}
+
+.sidebar_wrapper {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  background-color: grey;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 0px;
+  box-shadow: -2px 0 8px 1px grey;
+  z-index: 999;
+}
+
+.sidebar_wrapper button {
+  font-size: 25px;
+  width: fit-content;
+  margin: 20px;
+  padding: 0;
+  margin-left: auto;
+  border: 0;
+  height: fit-content;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+}
+
+.sidebar_wrapper a {
+  padding: 10px 20px;
+}
+.sidebar_wrapper a:hover {
+  filter: brightness(0.8);
+}
+
+@media screen and (max-width: 767px) {
+  .left {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .left_logo {
+    margin-left: 10px;
+  }
+  .left_nav {
+    left: 0;
+    right: inherit;
+  }
+  .btn_left {
+    margin-left: 20px !important;
+  }
+  .nav_elements {
+    display: none;
+  }
+  .mob_nav {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
 }
